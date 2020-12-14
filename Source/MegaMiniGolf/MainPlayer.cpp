@@ -169,7 +169,7 @@ void AMainPlayer::renderCursor()
 	//powerHit *= .5; // slow the hell down bro
 	//totalDistance *= .5; // SLOW
 	powerHit *= totalDistance; // the further the cursor is from the ball, higher the power hit is
-	powerHit /= 10;
+	powerHit /= 9;
 	powerHit.Z = 0;
 
 	DrawDebugLine

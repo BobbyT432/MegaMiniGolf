@@ -50,6 +50,14 @@ void ADataManager::BeginPlay()
 	newHole->setCupBoundaryBox(cupBoundaryBoxHoleFour);
 	newHole->setSpawnPoint(spawnPointHoleFour->GetActorLocation());
 	courseMap.insert({ 3, newHole });
+
+	newHole = new CourseNode;
+	newHole->setPar(parHoleFive);
+	newHole->setMaxAmtStrokes(maxAmtStrokesHoleFive);
+	newHole->setBoundaryBox(boundaryBoxHoleFive);
+	newHole->setCupBoundaryBox(cupBoundaryBoxHoleFive);
+	newHole->setSpawnPoint(spawnPointHoleFive->GetActorLocation());
+	courseMap.insert({ 4, newHole });
 }
 
 // Called every frame

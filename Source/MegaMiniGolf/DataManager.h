@@ -76,6 +76,19 @@ private:
 	ATriggerVolume* cupBoundaryBoxHoleFour;
 	UPROPERTY(EditAnywhere, Category = "Hole Four");
 	AActor* spawnPointHoleFour;
+
+	// -- Hole Five --
+	UPROPERTY(EditAnywhere, Category = "Hole Five");
+	int parHoleFive;
+	UPROPERTY(EditAnywhere, Category = "Hole Five");
+	int maxAmtStrokesHoleFive;
+	UPROPERTY(EditAnywhere, Category = "Hole Five");
+	ATriggerVolume* boundaryBoxHoleFive;
+	UPROPERTY(EditAnywhere, Category = "Hole Five");
+	ATriggerVolume* cupBoundaryBoxHoleFive;
+	UPROPERTY(EditAnywhere, Category = "Hole Five");
+	AActor* spawnPointHoleFive;
+
 public:	
 	// Sets default values for this actor's properties
 	ADataManager();
