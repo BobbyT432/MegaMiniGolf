@@ -177,7 +177,7 @@ void AMainPlayer::renderCursor()
 		GetWorld(),
 		updatedPowerLocation,
 		cursorWorldLoc, // 2D coordinates now represent a space in 3D space
-		FColor(0, 255, 0),
+		FColor(236, 21, 80),
 		false,
 		5.0f,
 		1,
@@ -191,6 +191,7 @@ void AMainPlayer::powerPutt()
 	{
 		// ** Get Location Before They Hit **
 		puttLocation = updatedPowerLocation;
+		puttLocation.Z += 20;
 		golfBall->AddImpulse(powerHit, TEXT("golfBall"), true);
 		strokeCount++;
 	}
@@ -240,6 +241,8 @@ void AMainPlayer::correctPlayerOutsideMap()
 	}
 	if ((boundaryBox) && !boundaryBox->IsOverlappingActor(this))
 	{
+		
+		
 		SetActorLocation(puttLocation);
 	}
 }
