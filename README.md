@@ -14,6 +14,3 @@ Download: https://drive.google.com/file/d/1CptOebKYIhV6_Iz52b0WC3MTyHfdI-Kg/
 ![](Screenshots/3.png)
 
 ![](Screenshots/4.png)
-
-
-
